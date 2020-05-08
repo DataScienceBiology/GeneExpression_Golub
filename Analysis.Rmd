@@ -66,7 +66,7 @@ There was some normalization done. Expression values per sample looks to have sa
 hist(trainset[,5], xlab = "gene expression", border = "blue4", col = "green")
 ```
 
-As we see the distribution looks squished. Now, we transpose the data and try some normalization. We'll also select the 100 most variable genes through samples. 
+As we see the distribution looks skewed. Now, we transpose the data and try some normalization. We'll also select the 100 most variable genes through samples. 
 
 ```{r centered}
 trainset <- as.data.frame(t(trainset))
